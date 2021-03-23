@@ -1,0 +1,11 @@
+<div class="container">
+  <h1> Alphabetical </h1>
+  <div class="row">
+    <% @customers.each do |customer| %>
+      <div class="column">
+        <%= render partial: "customer", locals: { customer: customer } %>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to "Home Page", root_path %>
+</div>
